@@ -1,9 +1,11 @@
-document.getElementById("image1").onmouseover = change();
-document.getElementById("image1").onmouseout = changeBack();
+let image1 = document.getElementById("image1")//.object ?
+
+image1.onmouseover = funtion (){ change() };
+image1.onmouseout = fuction() { changeBack() };
 
 function change() {
-  document.getElementById("image1").src = "./assets/img/image1_2.jpg";
+  image1.src = "./assets/img/image1_2.jpg";
 }
 function changeBack() {
-  document.getElementById("image1").src = "./assets/img/image1.jpg";
+  image1.src = "./assets/img/image1.jpg";
 }
